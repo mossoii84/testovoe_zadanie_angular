@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Icons } from '../icons/icons';
+
 import { CommonModule } from '@angular/common';
+import { Iconslist } from '../icons/icons-list';
 @Component({
   selector: 'app-input-mobile-search',
   standalone: true,
@@ -11,12 +12,20 @@ import { CommonModule } from '@angular/common';
 export class InputMobileSearchComponent  implements OnInit {
 
   @Input() isOpenMobileSearch: boolean | undefined;
-  icons: any;
+  icons = Iconslist;
 
 
   ngOnInit(): void {
      console.log(this.isOpenMobileSearch)
   }
+
+  isCloseMobilMenu() {
+    if(!this.isOpenMobileSearch){
+      this.isOpenMobileSearch = true;
+      console.log(this.isOpenMobileSearch)
+    }
+  }
+
 
 
 }

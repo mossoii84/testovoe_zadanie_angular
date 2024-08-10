@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Icons } from '../icons/icons';
 import { BehaviorSubject } from 'rxjs';
 import { InputSearchComponent } from '../input-search/input-search.component';
 import { CommonModule } from '@angular/common';
+import { Iconslist } from '../icons/icons-list';
 
 
 @Component({
@@ -14,22 +14,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderWebComponent {
   
-  icons:Icons= {
-    logo:'/assets/icons/Logo.svg',
-    add: '/assets/icons/add2.svg',
-    ava: '/assets/icons/AVA.svg',
-    search: '/assets/icons/search.svg',
-    notification:'/assets/icons/notifications.svg',
-    notification_mobile:'/assets/icons/notifications-mobile.svg',
-    contacts:'/assets/icons/contacts.svg',
-    favorites:'/assets/icons/favorites.svg',
-    link:'/assets/icons/link.svg',
-    tag:'/assets/icons/tag.svg',
-    history:'/assets/icons/history.svg',
-    menu:'/assets/icons/menu.svg',
-    arrow_back: '/public/assets/icons/arrow_back.svg'
-  }
-  
+  icons = Iconslist;
 
   public isOpenSearch$ = new BehaviorSubject<boolean>(true);
 

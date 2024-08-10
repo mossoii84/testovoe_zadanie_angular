@@ -1,8 +1,9 @@
+<div class="block-input-mobile-search" [ngClass]="isOpenMobileSearch ? '' : 'openActive'">
+    <ng-content select="[id=forSelectInChildInputMobile]"></ng-content>
+    <!-- <div (click)="isCloseMobilMenu()"><img [src]="icons.arrow_back" alt="arrow_back" ></div> -->
+    <input type="text" placeholder="Поисковый запрос" class="input-style" />
+    <div class="block-menu">
+        <h1>Hello World</h1>
+    </div>
 
-
-
-
-<div class="block-input-mobile-search"  [ngClass]="isOpenMobileSearch ? '' : 'openActive'" >
-            <div><img [src]="icons.arrow_back" alt="arrow_back"></div>
-            <input type="text" placeholder="Поисковый запрос" class="input-style"/>
-</div>
+</div>   

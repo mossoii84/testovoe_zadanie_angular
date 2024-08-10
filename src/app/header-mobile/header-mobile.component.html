@@ -26,7 +26,9 @@
             <div><img [src]="icons.search" alt="search" (click)="isOpenSearch()">
 
                     <ng-container *ngIf="!isOpenMobileSearch$.value">
-                            <app-input-mobile-search [isOpenMobileSearch]="isOpenMobileSearch$.value"></app-input-mobile-search>
+                            <app-input-mobile-search [isOpenMobileSearch]="isOpenMobileSearch$.value" >
+                                <div id="forSelectInChildInputMobile"><img [src]="icons.arrow_back" alt="arrow_back" (click)="isOpenSearch()"></div>
+                            </app-input-mobile-search>
                     </ng-container>
 
             </div>
