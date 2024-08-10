@@ -4,13 +4,11 @@
     max-height: 36px;
     justify-content: space-between;
 }
-
 .input-champ {
     margin-left: -50px;
     display: flex;
     align-items: center;
 }
-
 input {
     outline: none;
     /* width: 750px; */
@@ -18,7 +16,6 @@ input {
     position: absolute;
     height: 36px;
 }
-
 .btn-search {
     display: flex;
     align-items: center;
@@ -29,7 +26,6 @@ input {
     padding: 10px 15px;
 
 }
-
 .openActive {
     align-items: center;
     position: absolute;
@@ -37,7 +33,6 @@ input {
     animation-duration: 1.0s;
     animation-fill-mode: forwards;
 }
-
 
 @keyframes runRight {
     0% {
