@@ -4,7 +4,6 @@ import { InputSearchComponent } from '../input-search/input-search.component';
 import { HeaderWebComponent } from '../header-web/header-web.component';
 import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
 import { BreakpointObserver, Breakpoints, BreakpointState, LayoutModule} from '@angular/cdk/layout';
-import { Icons } from '../icons/icons';
 import { Subscription } from 'rxjs';
 
 @Component({

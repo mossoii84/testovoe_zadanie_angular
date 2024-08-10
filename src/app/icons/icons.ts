@@ -4,10 +4,12 @@ export interface Icons  {
   ava: string,
   search: string,
   notification:string,
+  notification_mobile:string,
   contacts:string,
   favorites:string,
   link:string,
   tag:string,
   history:string,
   menu:string,
+  arrow_back:string
 };

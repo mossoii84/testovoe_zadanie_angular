@@ -11,5 +11,4 @@ import { Component, Input } from '@angular/core';
 export class InputSearchComponent {
    @Input() isOpen: boolean | undefined;
 
-
 }
