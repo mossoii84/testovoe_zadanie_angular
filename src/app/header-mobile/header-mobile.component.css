@@ -6,19 +6,16 @@
     align-items: center;
     margin: 0 auto;
 }
-
 .logo {
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 li {
     list-style-type: none;
     color: #fff;
 }
-
 .user {
     width: 50%;
     display: flex;

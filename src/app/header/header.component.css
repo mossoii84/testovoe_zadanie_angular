@@ -26,8 +26,6 @@
 span {
     padding-left: 7px;
 }
-
-
 /* position avatar */
 .user {
     width: 15%;
@@ -39,7 +37,6 @@ span {
     display: flex;
     justify-content: space-evenly;
 }
-
 li {
     list-style-type: none;
     color: #fff;
