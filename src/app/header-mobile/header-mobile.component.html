@@ -1,50 +1,37 @@
 <nav class="header-container">
 
-    <div class="icon-menu">
-         <img [src]="icons.menu" alt="menu-mobile">
-    </div>
-
     <div class="logo">
-        <img [src]="icons.logo" alt="Logo">
+    <div class="icon-menu"><img [src]="icons.menu" alt="menu-mobile" (click)="isOpenMenu()"></div>
+    <div><img [src]="icons.logo" alt="Logo"></div>
     </div>
-
-
-
-
-        <ng-container>
-            <div class="links">
-                    <ul>
-                        <!-- <li class="position-img"><img [src]="icons.link"  alt="link"><span>Ссылки</span></li>
+    <ng-container *ngIf="this.isOpenMenu$.value">
+        <div class="links">
+                    <ul class="links-menu">
+                        <li class="position-img"><img [src]="icons.link"  alt="link"><span>Ссылки</span></li>
                         <li class="position-img"><img [src]="icons.contacts"  alt="contacts"><span>Контакты</span></li>
-                        <li class="position-img"><img [src]="icons.union"  alt="union"><span>Теги</span></li>
+                        <li class="position-img"><img [src]="icons.tag"  alt="union"><span>Теги</span></li>
                         <li class="position-img"><img [src]="icons.favorites"  alt="favorites"><span>Избранное</span></li>
                         <li class="position-img"><img [src]="icons.history" alt="history"><span>Посещения</span></li>
-                        -->
-                        <li class="position-img"> 
-                            <ng-container *ngIf="!isOpenSearch$.value">
-                                <app-input-mobile-search [isOpen]="isOpenSearch$.value"></app-input-mobile-search>
-                            </ng-container>
-                            
-                            <img [src]="icons.add" alt="add">
-                            <img [src]="icons.history" alt="history">
-                            <img [src]="icons.search"  alt="search" (click)="isOpenSearch()">
-                            <img [src]="icons.notification"  alt="notification">
-                        </li>
                     </ul>
-                
+                </div>
+    </ng-container>
+
+
+    <ng-container>
+        <div class="user">
+
+            <div><img [src]="icons.add" alt="add"></div>
+            <div><img [src]="icons.history" alt="history"></div>
+
+            <div><img [src]="icons.search" alt="search" (click)="isOpenSearch()">
+
+                    <ng-container *ngIf="!isOpenMobileSearch$.value">
+                            <app-input-mobile-search [isOpenMobileSearch]="isOpenMobileSearch$.value"></app-input-mobile-search>
+                    </ng-container>
 
             </div>
-        </ng-container>
+            <div><img [src]="icons.notification_mobile" alt="notification_mobile"></div>
 
-
-        <!-- <ng-container>
-            <div class="user">
-                <ul>
-                    <li class="position-img">
-                        <img [src]="icons.notification"  alt="notification">
-                        <img [src]="icons.ava"  alt="ava">
-                    </li>
-                </ul>
-            </div>
-        </ng-container> -->
+        </div>
+    </ng-container>
 </nav>

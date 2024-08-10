@@ -1,1 +1,8 @@
-<p>input-mobile-search works!</p>
+
+
+
+
+<div class="block-input-mobile-search"  [ngClass]="isOpenMobileSearch ? '' : 'openActive'" >
+            <div><img [src]="icons.arrow_back" alt="arrow_back"></div>
+            <input type="text" placeholder="Поисковый запрос" class="input-style"/>
+</div>

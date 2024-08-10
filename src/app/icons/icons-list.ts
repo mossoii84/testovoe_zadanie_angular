@@ -12,4 +12,5 @@ export const Iconslist = {
     link:'/assets/icons/link.svg',
     tag:'/assets/icons/tag.svg',
     history:'/assets/icons/history.svg',
+    
 }
