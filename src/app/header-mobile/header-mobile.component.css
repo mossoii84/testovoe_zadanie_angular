@@ -1,0 +1,42 @@
+.header-container {
+    background-color: #1074CC;
+    display: flex;
+    max-width: 100%;
+    height: 56px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon-menu {margin: 0 5px;}
+.logo {
+    border: 1px solid red;
+}
+.position-img {
+    display: flex;
+    border: 1px solid blue;
+}
+
+
+/* position avatar */
+.user {
+    display: flex;
+    border: 1px solid orange;
+}
+
+
+
+
+
+li {
+    list-style-type: none;
+    color: #fff;
+} 
+
+
+
+
+
+/* @media (max-width: 414px) {
+
+
+} */

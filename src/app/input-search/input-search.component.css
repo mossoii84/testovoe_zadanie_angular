@@ -1,0 +1,54 @@
+.block-input-search {
+    position: relative;
+    outline: none;
+    max-height: 36px;
+    justify-content: space-between;
+}
+
+.input-champ {
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    /* width: 750px; */
+    padding: 0 15px;
+    position: absolute;
+    height: 36px;
+}
+
+.btn-search {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: orange;
+    cursor: pointer;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 10px 15px;
+
+}
+
+.openActive {
+    align-items: center;
+    position: absolute;
+    animation-name: runRight;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes runRight {
+    0% {
+        right: 0;
+        opacity: 0.1;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: 100%;
+        width: 680px;
+    }
+}

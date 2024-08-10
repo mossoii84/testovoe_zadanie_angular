@@ -1,0 +1,41 @@
+
+
+<nav class="header-container">
+    <div class="logo"><img [src]="icons.logo" alt="Logo"></div>
+
+        <ng-container>
+            <div class="links">
+                <ul class="links-menu">
+                    <li class="position-img"><img [src]="icons.link"  alt="link"><span>Ссылки</span></li>
+                    <li class="position-img"><img [src]="icons.contacts"  alt="contacts"><span>Контакты</span></li>
+                    <li class="position-img"><img [src]="icons.tag"  alt="union"><span>Теги</span></li>
+                    <li class="position-img"><img [src]="icons.favorites"  alt="favorites"><span>Избранное</span></li>
+                    <li class="position-img"><img [src]="icons.history" alt="history"><span>Посещения</span></li>
+                </ul>
+            </div>
+
+    
+            <div class="search-block">
+                <ng-container *ngIf="!isOpenSearch$.value">
+                    <div (mouseleave)="isCloseSearch()">
+                     <app-input-search [isOpen]="isOpenSearch$.value"></app-input-search>
+                    </div>
+                </ng-container>
+                <div class="search-icon"><img [src]="icons.search"  alt="search" (click)="isOpenSearch()" class="img-search-icon"></div>
+                <div><img [src]="icons.add"  alt="add"></div>
+            </div>
+       
+
+
+
+        </ng-container>
+
+
+        <ng-container>
+            <div class="user">
+                    <div><img [src]="icons.notification"  alt="notification"></div>
+                    <div><img [src]="icons.ava"  alt="ava"></div>          
+            </div>
+        </ng-container>
+</nav>
+
