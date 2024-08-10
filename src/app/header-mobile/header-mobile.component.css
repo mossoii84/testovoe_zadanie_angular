@@ -6,6 +6,7 @@
     align-items: center;
     margin: 0 auto;
 }
+
 .logo {
     width: 50%;
     display: flex;
@@ -24,4 +25,3 @@ li {
     justify-content: space-evenly;
     align-items: center;
 }
-

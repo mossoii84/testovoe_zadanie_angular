@@ -1,19 +1,19 @@
 <nav class="header-container">
 
     <div class="logo">
-    <div class="icon-menu"><img [src]="icons.menu" alt="menu-mobile" (click)="isOpenMenu()"></div>
-    <div><img [src]="icons.logo" alt="Logo"></div>
+        <div class="icon-menu"><img [src]="icons.menu" alt="menu-mobile"></div>
+        <div><img [src]="icons.logo" alt="Logo"></div>
     </div>
     <ng-container *ngIf="this.isOpenMenu$.value">
         <div class="links">
-                    <ul class="links-menu">
-                        <li class="position-img"><img [src]="icons.link"  alt="link"><span>Ссылки</span></li>
-                        <li class="position-img"><img [src]="icons.contacts"  alt="contacts"><span>Контакты</span></li>
-                        <li class="position-img"><img [src]="icons.tag"  alt="union"><span>Теги</span></li>
-                        <li class="position-img"><img [src]="icons.favorites"  alt="favorites"><span>Избранное</span></li>
-                        <li class="position-img"><img [src]="icons.history" alt="history"><span>Посещения</span></li>
-                    </ul>
-                </div>
+            <ul class="links-menu">
+                <li class="position-img"><img [src]="icons.link" alt="link"><span>Ссылки</span></li>
+                <li class="position-img"><img [src]="icons.contacts" alt="contacts"><span>Контакты</span></li>
+                <li class="position-img"><img [src]="icons.tag" alt="union"><span>Теги</span></li>
+                <li class="position-img"><img [src]="icons.favorites" alt="favorites"><span>Избранное</span></li>
+                <li class="position-img"><img [src]="icons.history" alt="history"><span>Посещения</span></li>
+            </ul>
+        </div>
     </ng-container>
 
 
@@ -25,11 +25,12 @@
 
             <div><img [src]="icons.search" alt="search" (click)="isOpenSearch()">
 
-                    <ng-container *ngIf="!isOpenMobileSearch$.value">
-                            <app-input-mobile-search [isOpenMobileSearch]="isOpenMobileSearch$.value" >
-                                <div id="forSelectInChildInputMobile"><img [src]="icons.arrow_back" alt="arrow_back" (click)="isOpenSearch()"></div>
-                            </app-input-mobile-search>
-                    </ng-container>
+                <ng-container *ngIf="!isOpenMobileSearch$.value">
+                    <app-input-mobile-search [isOpenMobileSearch]="isOpenMobileSearch$.value">
+                        <div id="forSelectInChildInputMobile"><img [src]="icons.arrow_back" alt="arrow_back"
+                                (click)="isOpenSearch()"></div>
+                    </app-input-mobile-search>
+                </ng-container>
 
             </div>
             <div><img [src]="icons.notification_mobile" alt="notification_mobile"></div>

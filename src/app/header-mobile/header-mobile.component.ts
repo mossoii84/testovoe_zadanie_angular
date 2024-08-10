@@ -9,26 +9,15 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, InputMobileSearchComponent],
   templateUrl: './header-mobile.component.html',
-  styleUrl: './header-mobile.component.css'
+  styleUrl: './header-mobile.component.css',
 })
 export class HeaderMobileComponent {
+  icons = Iconslist;
 
-icons = Iconslist;
+  public isOpenMobileSearch$ = new BehaviorSubject<boolean>(true);
+  public isOpenMenu$ = new BehaviorSubject<boolean>(false);
 
-public isOpenMobileSearch$ = new BehaviorSubject<boolean>(true);
-public isOpenMenu$ = new BehaviorSubject<boolean>(false);
-Iconslist: any;
-
-
-isOpenSearch(){
-  this.isOpenMobileSearch$.next(!this.isOpenMobileSearch$.value)
-  console.log(this.isOpenMobileSearch$.value)
-}
-
-isOpenMenu(){
-  // this.isOpenMenu$.next(!this.isOpenMenu$.value)
-  console.log("menu-" , this.isOpenMenu$.value)
-}
-
-
+  isOpenSearch() {
+    this.isOpenMobileSearch$.next(!this.isOpenMobileSearch$.value);
+  }
 }
