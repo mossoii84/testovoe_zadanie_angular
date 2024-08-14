@@ -16,7 +16,7 @@ export class HeaderMobileComponent {
 
   public isOpenMobileSearch$ = new BehaviorSubject<boolean>(true);
   public isOpenMenu$ = new BehaviorSubject<boolean>(false);
-  Iconslist: any;
+
 
   isOpenSearch() {
     this.isOpenMobileSearch$.next(!this.isOpenMobileSearch$.value);
