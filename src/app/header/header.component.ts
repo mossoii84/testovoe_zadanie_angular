@@ -5,11 +5,12 @@ import { HeaderWebComponent } from '../header-web/header-web.component';
 import { HeaderMobileComponent } from '../header-mobile/header-mobile.component';
 import { BreakpointObserver, Breakpoints, BreakpointState, LayoutModule} from '@angular/cdk/layout';
 import { Subscription } from 'rxjs';
+import { TestComponent } from "../test/test.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, InputSearchComponent, HeaderWebComponent, HeaderMobileComponent, LayoutModule],
+  imports: [CommonModule, InputSearchComponent, HeaderWebComponent, HeaderMobileComponent, LayoutModule, TestComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
