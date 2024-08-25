@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { Iconslist } from '../icons/icons-list';
@@ -7,25 +7,15 @@ import { Iconslist } from '../icons/icons-list';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './input-mobile-search.component.html',
-  styleUrl: './input-mobile-search.component.css'
+  styleUrl: './input-mobile-search.component.css',
 })
-export class InputMobileSearchComponent  implements OnInit {
-
+export class InputMobileSearchComponent {
   @Input() isOpenMobileSearch: boolean | undefined;
   icons = Iconslist;
 
-
-  ngOnInit(): void {
-     console.log(this.isOpenMobileSearch)
-  }
-
   isCloseMobilMenu() {
-    if(!this.isOpenMobileSearch){
+    if (!this.isOpenMobileSearch) {
       this.isOpenMobileSearch = true;
-      console.log(this.isOpenMobileSearch)
     }
   }
-
-
-
 }

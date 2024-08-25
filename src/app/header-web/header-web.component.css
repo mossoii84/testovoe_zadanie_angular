@@ -6,56 +6,44 @@
     align-items: center;
     margin: 0 auto;
 }
-
 .logo {
     width: 15%;
     text-align: center;
 }
-
 /* position links */
 .links {
     width: 50%;
 }
-
 .links-menu {
     display: flex;
     /* justify-content: space-evenly; */
     justify-content: space-around;
 
 }
-
 .position-img {
     display: flex;
     align-items: center;
 }
-
 span {
     padding-left: 7px;
 }
-
-
 li {
     list-style-type: none;
     color: #fff;
 }
-
 .search-block {
     width: 25%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0 50px;
-
 }
-
 .search-icon {
     padding-right: 25px;
 }
-
 .img-search-icon {
     cursor: pointer;
 }
-
 .user {
     width: 10%;
     display: flex;

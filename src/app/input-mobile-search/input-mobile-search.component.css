@@ -1,9 +1,6 @@
-.container-input-mobile-search {
-    border: 1px solid red;
+h1 {
+    text-align: center;
 }
-
-
-
 .block-input-mobile-search {
     display: flex;
     position: relative;
@@ -12,45 +9,40 @@
     width: 100%;
     align-items: center;
 }
+.block-menu {
+    display: block;
+    position: absolute;
+    top: 56px;
+    background-color: white;
+    height: 200px;
+    width: 100%;
+}
 .input-style {
     background-color: #e6e6e6;
-     border-radius: 24px;
-     width: 100%;
-     padding: 15px 15px;
-     margin: 2px 20px;
-     border:0;
-     outline:0;
-   
+    border-radius: 24px;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 2px 20px;
+    border: 0;
+    outline: 0;
 }
-
 .openActive {
     position: absolute;
     animation-name: runRight;
     animation-duration: 1.0s;
     animation-fill-mode: forwards;
-    top:0;
+    top: 0;
 }
-
 @keyframes runRight {
     0% {
         left: 100%;
         opacity: 0.1;
     }
+
     100% {
         opacity: 1;
         left: 0;
     }
 }
 
-
-
-.block-menu {
-
-    display: block;
-    position: absolute;
-    top:56px;
-    background-color: white;
-    height: 200px;
-    width: 100%;
-  }
 

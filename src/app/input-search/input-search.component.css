@@ -1,7 +1,6 @@
 .block-input-search {
     position: relative;
     outline: none;
-    max-height: 36px;
     justify-content: space-between;
 }
 
@@ -13,20 +12,22 @@
 
 input {
     outline: none;
-    /* width: 750px; */
+    border: 0;
     padding: 0 15px;
     position: absolute;
     height: 36px;
+    border-radius: 4px;
 }
 
 .btn-search {
+    border-radius: 4px;
     display: flex;
     align-items: center;
     position: absolute;
     background-color: orange;
     cursor: pointer;
     border: 1px solid rgb(199, 199, 199);
-    padding: 10px 15px;
+    padding: 8px 15px;
 
 }
 
@@ -37,7 +38,6 @@ input {
     animation-duration: 1.0s;
     animation-fill-mode: forwards;
 }
-
 
 @keyframes runRight {
     0% {
@@ -50,5 +50,38 @@ input {
         opacity: 1;
         right: 100%;
         width: 680px;
+    }
+}
+
+
+
+.search-champ {
+    margin-right: 50px;
+    margin-top: 18px;
+    border-radius: 6px;
+    background-color: white;
+    -webkit-box-shadow: 6px 9px 32px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 32px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 32px -13px rgba(0, 0, 0, 0.75);
+}
+
+.openActiveSearchChamp {
+    position: absolute;
+    animation-name: runRightTest;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes runRightTest {
+    0% {
+        right: 0;
+        opacity: 0.1;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: 100%;
+        width: 660px;
     }
 }
