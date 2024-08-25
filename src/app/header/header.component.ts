@@ -18,8 +18,7 @@ import { Subscription } from 'rxjs';
     InputSearchComponent,
     HeaderWebComponent,
     HeaderMobileComponent,
-    LayoutModule,
-  ],
+    LayoutModule,  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })

@@ -1,0 +1,83 @@
+.container-search {
+    display: flex;
+    width: 100%;
+}
+
+.block-left {
+    display: grid;
+    width: 30%;
+}
+
+
+
+.block-right {
+    width: 70%;
+    /* background-color: aqua; */
+}
+
+li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.title {
+    font-size: 0.8em;
+    color: grey;
+}
+
+
+
+
+.input-part {
+
+    display: grid;
+    justify-items: center;
+    position: relative;
+}
+
+.input-part input {
+    display: grid;
+    outline: none;
+    border: 0;
+    height: 36px;
+    border-radius: 4px;
+    margin: 25px;
+    width: 80%;
+    z-index: 1;
+    border: 1px solid rgb(226, 226, 226);
+    padding-left: 20px;
+}
+
+.label-for-searh {
+    position: absolute;
+    top: 17px;
+    left: 55px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    padding: 0 5px;
+    color: rgb(160, 159, 159);
+}
+
+
+
+.checkbox-part {
+    display: flex;
+    width: 100%;
+}
+
+.checkbox-part ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+/* Масштабирование чекбокса */
+input[type="checkbox"] {
+    transform: scale(1.5);
+    /* Увеличение в 1.5 раза */
+    margin: 10px;
+    /* Чтобы сохранить расстояние вокруг чекбокса */
+    margin-left: 20px;
+}
