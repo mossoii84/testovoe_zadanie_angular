@@ -19,6 +19,7 @@ export class HeaderWebComponent {
 
   isOpenSearch() {
     this.isOpenSearch$.next(!this.isOpenSearch$.value);
+    console.log("-----", this.isOpenSearch$)
   }
 
   isCloseSearch() {

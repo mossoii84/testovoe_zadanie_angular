@@ -3,5 +3,6 @@
                 <input type="text" placeholder="Поисковый запрос" [ngClass]="isOpen ? '' : 'openActive'" />
                 <div class="btn-search">Найти</div>
         </div>
-         <app-search-block-for-menu class="search-champ" [ngClass]="isOpen ? '' : 'openActiveSearchChamp'"></app-search-block-for-menu>
+         <app-search-block-for-menu class="search-champ" [ngClass]="isOpen ? '' : 'openActiveSearchChamp'"
+                                    [isOpenMobileSearch]="true"></app-search-block-for-menu>
 </div>

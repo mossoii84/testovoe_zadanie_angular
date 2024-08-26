@@ -47,36 +47,3 @@ export class HeaderComponent implements OnInit {
     this.subscription?.unsubscribe();
   }
 }
-    
-
-
-
-
-
-
-
-
-
-  // icons:Icons= {
-  //   logo:'/assets/icons/Logo.svg',
-  //   add: '/assets/icons/Add.png',
-  //   ava: '/assets/icons/Ava.png',
-  //   search: '/assets/icons/Search.png',
-  //   notification:'/assets/icons/Notifications.png',
-
-  //   contacts:'/assets/icons/contacts.svg',
-  //   favorites:'/assets/icons/favorites.svg',
-  //   link:'/assets/icons/link.svg',
-  //   union:'/assets/icons/union.svg',
-  //   history:'/assets/icons/history.svg',
-  // }
-
-
-  // public isOpenSearch$ = new BehaviorSubject<boolean>(true);
-
-  // isOpenSearch(){
-  //   this.isOpenSearch$.next(!this.isOpenSearch$.value)
-  //   console.log(this.isOpenSearch$.value)
-  // }
-
-

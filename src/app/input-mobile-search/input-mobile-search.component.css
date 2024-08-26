@@ -46,3 +46,12 @@ h1 {
 }
 
 
+.search-champ {
+    margin-right: 50px;
+    margin-top: 18px;
+    border-radius: 6px;
+    background-color: white;
+    -webkit-box-shadow: 6px 9px 32px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 9px 32px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 9px 32px -13px rgba(0, 0, 0, 0.75);
+}

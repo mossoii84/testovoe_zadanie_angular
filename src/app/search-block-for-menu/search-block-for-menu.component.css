@@ -1,83 +1,104 @@
 .container-search {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
-
 .block-left {
-    display: grid;
-    width: 30%;
+  display: grid;
+  width: 30%;
 }
-
-
-
 .block-right {
-    width: 70%;
-    /* background-color: aqua; */
+  width: 70%;
 }
-
 li {
-    list-style-type: none;
-    padding: 5px 0;
+  list-style-type: none;
+  padding: 5px 0;
 }
-
 .title {
-    font-size: 0.8em;
-    color: grey;
+  font-size: 0.8em;
+  color: grey;
 }
-
-
-
-
 .input-part {
-
-    display: grid;
-    justify-items: center;
-    position: relative;
+  display: grid;
+  justify-items: center;
+  position: relative;
 }
-
 .input-part input {
-    display: grid;
-    outline: none;
-    border: 0;
-    height: 36px;
-    border-radius: 4px;
-    margin: 25px;
-    width: 80%;
-    z-index: 1;
-    border: 1px solid rgb(226, 226, 226);
-    padding-left: 20px;
+  display: grid;
+  outline: none;
+  border: 0;
+  height: 46px;
+  border-radius: 4px;
+  margin: 30px 0 10px 0;
+  width: 84%;
+  z-index: 1;
+  border: 1px solid rgb(172, 172, 172);
+  padding-left: 20px;
 }
-
 .label-for-searh {
-    position: absolute;
-    top: 17px;
-    left: 55px;
-    z-index: 2;
-    background-color: rgb(255, 255, 255);
-    font-size: 0.8em;
-    padding: 0 5px;
-    color: rgb(160, 159, 159);
+  position: absolute;
+  top: 17px;
+  border: 10px;
+  left: 55px;
+  z-index: 2;
+  background-color: white;
+  font-size: 0.8em;
+  padding: 0 5px;
+  color: rgb(160, 159, 159);
 }
-
-
-
 .checkbox-part {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
-
 .checkbox-part ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+/* Масштабирование чекбокса */
+.checkbox-part input[type="checkbox"] {
+  transform: scale(1.5);
+  /* Увеличение в 1.5 раза */
+  margin: 10px 10px 10px 0px;
+}
+.checkbox-part li {
+margin-left:15px;
+}
+.left-part li{
+  margin:8px;
 }
 
-/* Масштабирование чекбокса */
-input[type="checkbox"] {
-    transform: scale(1.5);
-    /* Увеличение в 1.5 раза */
-    margin: 10px;
-    /* Чтобы сохранить расстояние вокруг чекбокса */
-    margin-left: 20px;
+
+
+  /* мобильная версия */
+.block-right_for_mobile {
+  width: 100%;
+}
+.ya_icon{
+   position:absolute ;
+   top:33px;
+   right:40px;
+   z-index: 9;
+}
+.checkbox-part_for_mobile {
+  display: grid;
+  width: 100%;
+}
+
+/* Скрываем стандартный чекбокс */
+.checkbox-part_for_mobile input[type="checkbox"] {
+  /* Чтобы сохранить расстояние вокруг чекбокса */
+  margin-left: 20px; 
+  display: none;
+}
+.checkbox_champ label{
+  margin-left: 10px;
+}
+
+.checkbox_champ {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }

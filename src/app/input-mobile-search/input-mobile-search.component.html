@@ -1,7 +1,8 @@
 <div class="block-input-mobile-search" [ngClass]="isOpenMobileSearch ? '' : 'openActive'">
     <ng-content select="[id=forSelectInChildInputMobile]"></ng-content>
     <input type="text" placeholder="Поисковый запрос" class="input-style" />
+
     <div class="block-menu">
-        <h1>Тут должно быть меню</h1>
+        <app-search-block-for-menu class="search-champ"  [isOpenMobileSearch]="isOpenMobileSearch"></app-search-block-for-menu>
     </div>
 </div>   

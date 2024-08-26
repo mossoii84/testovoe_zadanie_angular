@@ -11,5 +11,6 @@ import { SearchBlockForMenuComponent } from "../search-block-for-menu/search-blo
 })
 export class InputSearchComponent {
    @Input() isOpen: boolean | undefined;
+   @Input() isOpenMobileSearch: boolean | undefined;
 
 }
