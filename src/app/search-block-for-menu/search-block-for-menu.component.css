@@ -36,7 +36,7 @@ li {
 }
 .label-for-searh {
   position: absolute;
-  top: 17px;
+  top: 22px;
   border: 10px;
   left: 55px;
   z-index: 2;
@@ -76,7 +76,7 @@ margin-left:15px;
 }
 .ya_icon{
    position:absolute ;
-   top:33px;
+   top:44px;
    right:40px;
    z-index: 9;
 }
